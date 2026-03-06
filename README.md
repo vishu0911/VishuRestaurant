@@ -28,3 +28,9 @@ https://vishu0911.github.io/VishuRestaurant/
 
 # 📸 Screenshots
 
+![38134578-B25B-44AD-BFCE-90C7F4C3A18C_1_201_a](https://github.com/user-attachments/assets/f9f67b4f-8d70-4ed6-a19e-9bb3e931ab7d)
+
+![38134578-B25B-44AD-BFCE-90C7F4C3A18C_1_201_a](https://github.com/user-attachments/assets/b8504622-004d-42d8-b26a-b8e5c806db65)
+
+
+
