@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishu Sweets & Restaurant | Since 2025 - Pure Desi Ghee Sweets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Vishu Sweets</h1>
+                    <p>Since 2025 - Pure Desi Ghee Sweets</p>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="products">Products</a></li>
+                    <li><a href="#" data-page="order">Order Now</a></li>
+                    <li><a href="#" data-page="about">About Us</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                    <li><a href="#" data-page="reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page-content active">
+        <!-- Hero Banner -->
+        <div class="hero">
+            <div class="container">
+                <h2>Welcome to Vishu Sweets & Restaurant</h2>
+                <p>Since 2025, we've been serving traditional Indian sweets made with pure desi ghee and the finest ingredients. Taste the tradition!</p>
+                
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-star"></i>
+                        <span>4.8/5 Google Rating</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Same Day Delivery</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Call: +91 18000 50000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Order Options -->
+        <div class="container">
+            <div class="section">
+                <div class="section-title">
+                    <h2>Order Now</h2>
+                </div>
+                
+                <div class="order-options">
+                    <div class="order-option">
+                        <div class="order-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>Order on WhatsApp</h3>
+                        <p>Send your order directly on WhatsApp for quick response</p>
+                        <button class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                    
+                    <div class="order-option">
+                        <div class="order-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call to Order</h3>
+                        <p>Call us directly to place your order or for any queries</p>
+                        <button class="call-btn">
+                            <i class="fas fa-phone-alt"></i> Call Now: +91 98765 43210
+                        </button>
+                    </div>
+                    
+                    <div class="order-option">
+                        <div class="order-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Order Form</h3>
+                        <p>Fill our simple order form and we'll call you back</p>
+                        <button class="order-btn" data-page="order">Go to Order Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Page -->
+    <section id="products" class="page-content">
+        <div class="container">
+            <div class="section">
+                <div class="section-title">
+                    <h2>Our Products</h2>
+                </div>
+                
+                <div class="categories">
+                    <button class="category-btn active" data-category="all">All Items</button>
+                    <button class="category-btn" data-category="sweets">Sweets</button>
+                    <button class="category-btn" data-category="namkeen">Namkeen</button>
+                    <button class="category-btn" data-category="special">Special Items</button>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product items will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Now Page -->
+    <section id="order" class="page-content">
+        <div class="container">
+            <div class="section">
+                <div class="section-title">
+                    <h2>Place Your Order</h2>
+                </div>
+                
+                <div class="order-options">
+                    <div class="order-option">
+                        <div class="order-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp Order</h3>
+                        <p>Click below to order directly on WhatsApp</p>
+                        <button class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </button>
+                    </div>
+                    
+                    <div class="order-option">
+                        <div class="order-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone Order</h3>
+                        <p>Call us directly to place your order</p>
+                        <button class="call-btn">
+                            <i class="fas fa-phone-alt"></i> Call Now: +91 98765 43210
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="order-form">
+                    <h3 style="margin-bottom: 20px; text-align: center;">Order Form</h3>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Mobile Number *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="item">Select Item *</label>
+                            <select id="item" required>
+                                <option value="">Select an item</option>
+                                <option value="Gulab Jamun">Gulab Jamun - ₹450/kg</option>
+                                <option value="Kaju Katli">Kaju Katli - ₹900/kg</option>
+                                <option value="Rasgulla">Rasgulla - ₹400/kg</option>
+                                <option value="Peda">Peda - ₹500/kg</option>
+                                <option value="Samosa">Samosa - ₹30/piece</option>
+                                <option value="Kachori">Kachori - ₹25/piece</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input type="text" id="quantity" placeholder="e.g., 1 kg, 2 pieces" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Delivery Address (if needed)</label>
+                            <textarea id="address" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about" class="page-content">
+        <div class="container">
+            <div class="section">
+                <div class="section-title">
+                    <h2>About Vishu Sweets & Restaurant</h2>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Founded in 2025 by <b>Happy Sing</b>, Vishu Sweets & Restaurant started as a small shop in the heart of the city with a simple mission: to provide high-quality traditional sweets made with pure ingredients.</p>
+                        
+                        <p>We are dedicated to preserving the authentic taste of Indian sweets. We use only <strong>pure desi ghee</strong>, finest milk, and select nuts in all our preparations, following traditional recipes passed down through generations.</p>
+                        
+                        <p>As a family-run business, we treat every customer like a member of our own family. Our commitment to quality and authenticity has made us a trusted name for celebrations, festivals, and everyday indulgences.</p>
+                        
+                        <p>Today, while we are new in this journey, we remain true to our roots – ensuring every sweet that leaves our shop carries the love, care, and tradition that has been our hallmark since day one.</p>
+                    </div>
+                    
+                    <div class="about-img">
+                        <img src="vishu.jpeg" alt="Vishu Sweets Shop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact" class="page-content">
+        <div class="container">
+            <div class="section">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 style="margin-bottom: 25px;">Get in Touch</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Shop Address</h4>
+                                <p>123 Sweet Street,<br>Near City Market,<br>Delhi - 110006</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+91 18000 50000<br>+91 18000 50001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday: 8:00 AM - 10:00 PM<br>Open all days, including holidays</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp Orders</h4>
+                                <p>+91 18000 50000<br>Available 24/7 for orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="order-option" style="margin-bottom: 30px;">
+                            <div class="order-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h3>Our Location</h3>
+                            <p>Visit us at our shop in the heart of the city</p>
+                            <div style="height: 200px; background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObYFY1kHxvf2rB6s4bZjjKeLe29vGKEvu6g&s'); background-size: cover; background-position: center; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-top: 20px; color: white; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                                <i class="fas fa-map" style="font-size: 60px; color: rgba(255,255,255,0.9);"></i>
+                            </div>
+                        </div>
+                        
+                        <button class="whatsapp-btn" style="margin-bottom: 15px;">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </button>
+                        
+                        <button class="call-btn">
+                            <i class="fas fa-phone-alt"></i> Call Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Page -->
+    <section id="reviews" class="page-content">
+        <div class="container">
+            <div class="section">
+                <div class="section-title">
+                    <h2>Customer Reviews</h2>
+                </div>
+                
+                <div class="reviews">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div style="width: 50px; height: 50px; background-color: #f5e6d3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #d32f2f;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Rajesh Kumar</h4>
+                                <p>Regular Customer</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Best Gulab Jamun in the city! I've been buying from Vishu Sweets since they opened. The quality is always consistent and the taste is heavenly."</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div style="width: 50px; height: 50px; background-color: #f5e6d3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #d32f2f;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <p>Diwali Customer</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Ordered Diwali sweets for my family. The packing was excellent and sweets reached fresh. Their Kaju Katli is simply the best!"</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div style="width: 50px; height: 50px; background-color: #f5e6d3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #d32f2f;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Anil Mehta</h4>
+                                <p>Wedding Order</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"We ordered sweets for our daughter's wedding. Vishu Sweets handled our bulk order professionally and delivered on time. All guests appreciated the quality."</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <h3 style="color: #d32f2f; margin-bottom: 15px;">Google Reviews</h3>
+                    <div class="badge" style="display: inline-flex; margin-bottom: 20px;">
+                        <i class="fab fa-google"></i>
+                        <span>4.8/5 Rating from 850+ Reviews</span>
+                    </div>
+                    <p>Check out more reviews on our Google Business Profile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vishu Sweets & Restaurant</h3>
+                    <p>Since 2025, serving traditional Indian sweets made with pure desi ghee and finest ingredients.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="#" data-page="home" style="color: white; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" data-page="products" style="color: white; text-decoration: none;">Our Products</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" data-page="order" style="color: white; text-decoration: none;">Order Now</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" data-page="about" style="color: white; text-decoration: none;">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Sweet Street, Delhi - 110006</p>
+                    <p><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> order@vishusweets.com</p>
+                    <p><i class="fas fa-clock" style="margin-right: 10px;"></i> 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Vishu Sweets & Restaurant. All Rights Reserved. | Since 2025</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
